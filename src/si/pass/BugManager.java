@@ -5,13 +5,33 @@
  */
 package si.pass;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.lang.Math;
 
-/**
- *
- * @author froeb
- */
 public class BugManager {
     private int bugID;
-    // private List<Bug> bugList;
+    ArrayList<Bugs> bugList = new ArrayList();
+
+    public static void main(String[] args){
+        generateBugId();
+    }
+
+    public static void deleteBug(int index){
+        
+    }
+    public static void editBug(int index, Bugs bugs){
+
+    }
+    public static int generateBugId(){
+        int bugID = (int)(Math.random()+1*10);
+        System.out.println(bugID);
+        return bugID;
+    }
+    //public static String[] getAllBugs(){
+        
+    //}
+    public static void saveBug(Bugs bugs){
+        
+    }
 }
